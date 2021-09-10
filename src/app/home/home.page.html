@@ -1,0 +1,35 @@
+<ion-header>
+    <ion-toolbar color="dark">
+        <p align="center">
+        <ion-title>
+            Profile
+        </ion-title>
+        </p>
+        <ion-buttons slot="end">
+            <ion-button (click)="logout()">
+                <ion-icon name="log-out"></ion-icon>
+            </ion-button>
+        </ion-buttons>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding" >
+
+
+    <p align="center"><img src="/assets/img/Icon.jpg" alt="" /></p>
+
+    <div class="card">
+
+        <h1 align="center">André Gomes</h1>
+        <p class="title">Moderator</p>
+        <p>Membro desde: 08/11/2019</p>
+        <p>Upvotes: 5300</p>
+    </div>
+
+    <ion-button expand="block" color = "dark" (click)="goSettingsPage()">
+        Definições
+    </ion-button>
+
+</ion-content>
+
+

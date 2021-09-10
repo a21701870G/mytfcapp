@@ -1,0 +1,65 @@
+<ion-header>
+  <ion-toolbar color="dark">
+    <p align="center">
+      <ion-title>Ranking</ion-title>
+    </p>
+
+  </ion-toolbar>
+
+</ion-header>
+
+<ion-content>
+  <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names.." title="Type in a name">
+  <div class="container">
+    <div>
+      <table>
+        <thead>
+        <tr>
+          <th>Rank</th>
+          <th>Username</th>
+          <th>Upvotes</th>
+
+        </tr>
+        </thead>
+        <tbody>
+        <tr >
+          <td (click)="goTopicForum()" class="rank">1</td>
+          <td class="team">Guilherme</td>
+          <td class="points">1460</td>
+
+        </tr>
+        <tr (click)="goProfilePage()">
+          <td class="rank">2</td>
+          <td class="team">João</td>
+          <td class="points">200</td>
+
+        </tr>
+        <tr>
+          <td class="rank">3</td>
+          <td class="team">Gonçalo Coutinho</td>
+          <td class="points">150</td>
+
+        </tr>
+        <tr>
+          <td class="rank" click>4</td>
+          <td class="team">Henrique Silvestre</td>
+          <td class="points">120</td>
+
+        </tr>
+        <tr>
+          <td class="rank">5</td>
+          <td class="team">Margarida Martins</td>
+          <td class="points">50</td>
+
+        </tr>
+        <tr>
+          <td class="rank">6</td>
+          <td class="team">João alves</td>
+          <td class="points">0</td>
+
+        </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</ion-content>

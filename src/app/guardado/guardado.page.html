@@ -1,0 +1,62 @@
+<ion-header>
+  <ion-toolbar color="dark">
+    <p align="center">
+      <ion-title>Conteudos</ion-title>
+    </p>
+    <ion-button slot="start" color="dark" (click)="back()">
+      <ion-icon name="arrow-back" color="" size="large"></ion-icon>
+    </ion-button>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <ion-list>
+    <ion-item-divider>
+      <ion-label color="primary">
+        Gestão
+      </ion-label>
+    </ion-item-divider>
+<ion-item>
+  <ion-button slot="end" color="primary" (click)="goGestao()">
+    <ion-icon  slot="end" name="arrow-round-forward" ></ion-icon>
+  </ion-button>
+  <ion-label>Controlo de Gestão
+  </ion-label>
+</ion-item>
+<ion-item><ion-label>Matemática 1</ion-label>
+  <ion-button slot="end" color="primary" >
+    <ion-icon  slot="end" name="arrow-round-forward" ></ion-icon>
+  </ion-button></ion-item>
+<ion-item><ion-label>Marketing</ion-label>
+  <ion-button slot="end" color="primary">
+    <ion-icon  slot="end" name="arrow-round-forward" ></ion-icon>
+  </ion-button></ion-item>
+
+<ion-item-divider>
+  <ion-label color="primary">
+    Informática
+  </ion-label>
+</ion-item-divider>
+<ion-item>
+
+  <ion-label>Linguagens de Programação</ion-label>
+  <ion-button slot="end" color="primary" >
+    <ion-icon  slot="end" name="arrow-round-forward" ></ion-icon>
+  </ion-button>
+</ion-item>
+<ion-item><ion-label>Inteligencia artificial</ion-label>
+  <ion-button slot="end" color="primary">
+    <ion-icon  slot="end" name="arrow-round-forward" ></ion-icon>
+  </ion-button></ion-item>
+<ion-item><ion-label>Base de Dados</ion-label>
+  <ion-button slot="end" color="primary">
+    <ion-icon  slot="end" name="arrow-round-forward" ></ion-icon>
+  </ion-button></ion-item>
+
+
+</ion-list>
+<ion-fab vertical="bottom" horizontal="end" slot="fixed">
+  <ion-fab-button (click)="goUpload()">
+    <ion-icon name="add"></ion-icon>
+  </ion-fab-button>
+</ion-fab>
+</ion-content>

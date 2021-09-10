@@ -1,0 +1,64 @@
+<ion-header>
+  <ion-toolbar color="dark">
+    <p align="center">
+      <ion-title>Conteudos</ion-title>
+    </p>
+
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Procurar resumo" title="Escreva um nome">
+  <ion-card-header align="center"> Resumo mais visto da semana</ion-card-header>
+  <ion-card>
+
+    <ion-item>
+      <h2>Catarina Sousa</h2>
+     <p>6/9/2021</p>
+    </ion-item>
+
+    <img src="assets/img/Marketing.jpg" routerLink="../../../marketing">
+
+    <ion-card-content>
+      <p>Resumo de Marketing</p>
+    </ion-card-content>
+
+    <ion-row>
+      <ion-col>
+        <button ion-button color="primary" clear small icon-start>
+          <ion-icon name='thumbs-up'></ion-icon>
+          500 Upvotes
+        </button>
+      </ion-col>
+      <ion-col>
+        <button ion-button color="primary" clear small icon-start>
+          <ion-icon name='text'></ion-icon>
+          30 Comentários
+        </button>
+      </ion-col>
+      <ion-col align-self-center text-center>
+        <ion-note>
+          1 semana atras
+        </ion-note>
+      </ion-col>
+    </ion-row>
+
+  </ion-card>
+  <div class="row">
+
+<ion-button expand="full" color = "dark" (click)="goNovo()">
+  Ver Novos
+</ion-button>
+<ion-button expand="full" align="end" color = "dark" class="col text-right" (click)="goGuardado()">
+  Guardados
+</ion-button>
+
+</div>
+  <ion-fab vertical="bottom" horizontal="end" slot="fixed">
+    <ion-fab-button color="dark" (click)="goUpload()">
+      <ion-icon name="add"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+
+</ion-content>

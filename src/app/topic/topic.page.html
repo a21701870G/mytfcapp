@@ -1,0 +1,67 @@
+<ion-header>
+  <ion-toolbar color="dark">
+    <ion-button slot="start" color="dark" (click)="back()">
+      <ion-icon name="arrow-back" color="" size="large"></ion-icon>
+    </ion-button>
+    <p align="center">
+      <ion-title>
+        SQL
+      </ion-title>
+    </p>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+
+<ion-content>
+  <ion-list>
+    <ion-item-divider>
+      <ion-label color="dark">
+       Gonçalo Coutinho
+      </ion-label>
+    </ion-item-divider>
+
+    <ion-item>
+    <ion-card>
+      Queria fazer UPDATE no ultimo registro da tabela, onde a coluna agente seja igual a "4827"
+      Tentei usar desta forma mas ocorre erro:
+
+
+
+      Alguem poderia me dar uma ajuda?
+
+    </ion-card>
+
+
+    </ion-item>
+  <ion-item>
+    <ion-card> UPDATE login_agent
+      SET data_hora_login_saida = 'DATA_FIM'
+      WHERE agente = '4827'
+      AND  id_log IN (select max(id_log) from login_agent);</ion-card>
+  </ion-item>
+    <ion-item-divider>
+      <ion-label color="dark">
+        André Gomes
+      </ion-label>
+    </ion-item-divider>
+    <ion-item>
+      <ion-card>
+        Com essa query, só será realizado o update caso o último registro na tabela login_agent seja do agente 4827.
+
+        Se você quer atualizar a coluna data_hora_login_saida do último registro do agente 4827, tem que filtrar o max(id_log).
+      </ion-card>
+    </ion-item>
+
+  </ion-list>
+  <ion-fab vertical="bottom" horizontal="start" slot="fixed">
+    <ion-fab-button color="dark" >
+      <ion-icon name="arrow-dropright"></ion-icon>
+    </ion-fab-button>
+    <ion-fab-list side="top">
+      <ion-item >
+        <ion-label (click)="goNew()">Responder ao topico</ion-label>
+      </ion-item>
+    </ion-fab-list>
+  </ion-fab>
+</ion-content>
+</ion-content>

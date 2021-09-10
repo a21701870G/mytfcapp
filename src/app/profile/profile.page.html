@@ -1,0 +1,31 @@
+<ion-header>
+  <ion-toolbar color="dark">
+    <ion-button slot="start" color="dark" (click)="back()">
+      <ion-icon name="arrow-back" color="" size="large"></ion-icon>
+    </ion-button>
+    <p align="center">
+      <ion-title>
+        Profile
+      </ion-title>
+    </p>
+    <ion-buttons slot="end">
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding" >
+
+
+  <p align="center"><img src="/assets/img/Icon.jpg" alt="" /></p>
+
+  <div class="card">
+
+    <h1 align="center">João</h1>
+    <p class="title">Upvotes: 200</p>
+    <p>Membro desde: 08/11/2019</p>
+    <p>Matérias: Programação(Java, Kotlin, HTML, C++)</p>
+  </div>
+  <ion-button expand="block" color = "dark" (click)="goPaymentPage()">
+    Pedir Explicação
+  </ion-button>
+</ion-content>

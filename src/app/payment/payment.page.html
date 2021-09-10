@@ -1,0 +1,35 @@
+<ion-header>
+  <ion-toolbar color="dark">
+    <ion-button slot="start" color="dark" (click)="back()">
+      <ion-icon name="arrow-back" color="" size="large"></ion-icon>
+    </ion-button>
+    <p align="center">
+      <ion-title>
+        Payment
+      </ion-title>
+    </p>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-item>
+    <ion-label class = "user_Name" position="floating" color="dark">Número do Cartão</ion-label>
+    <ion-input type="Card Number" ></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label class = "user_Name" position="floating" color="dark"> Nome</ion-label>
+    <ion-input type="" ></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label class = "user_Name"  color="dark">Data de expiração</ion-label>
+    <ion-input type="Date" ></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label class = "user_Name" position="floating" color="dark"> CVV</ion-label>
+    <ion-input type="" ></ion-input>
+  </ion-item>
+  <ion-button expand="block" color = "dark" (click)="goFinish()" align="down">
+    Confirm
+  </ion-button>
+</ion-content>

@@ -1,0 +1,120 @@
+<ion-header>
+  <ion-toolbar color="dark">
+    <p align="center">
+      <ion-title>Forum</ion-title>
+    </p>
+
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Procurar tópico por nome..." title="Type in a name">
+  <ion-card>
+
+    <ion-item>
+      <ion-avatar item-start>
+        <img src="assets/img/Utilizador%201.jpg">
+      </ion-avatar>
+      <button ion-button color="primary" clear small icon-start>
+      </button>
+      <h5>SQL</h5>
+      <button ion-button color="primary" clear small icon-start>
+      </button>
+      <button ion-button color="primary" clear small icon-start>
+      </button>
+      <button ion-button color="primary" clear small icon-start>
+      </button>
+      <button ion-button color="primary" clear small icon-start>
+      </button>
+      <button ion-button color="primary" clear small icon-start>
+      </button>
+      <button ion-button color="primary" clear small icon-start>
+      </button>
+      <button ion-button color="primary" clear small icon-start>
+      </button>
+      <button ion-button color="primary" clear small icon-start>
+      </button>
+
+      <ion-icon name='thumbs-up'></ion-icon>
+
+    </ion-item>
+
+
+
+    <ion-card-content>
+      <p>Gonçalo Coutinho</p>
+    </ion-card-content>
+
+    <ion-row>
+      <ion-col>
+        <button ion-button color="primary" clear small icon-start>
+          <ion-icon name='text'></ion-icon>
+          4 Comentários
+        </button>
+      </ion-col>
+      <ion-col>
+        <button ion-button color="primary" clear small icon-start>
+
+        </button>
+      </ion-col>
+      <ion-col align-self-center text-center>
+        <ion-note>
+          3h atras
+        </ion-note>
+      </ion-col>
+    </ion-row>
+
+  </ion-card>
+  <ion-card>
+
+    <ion-item>
+      <ion-avatar item-start>
+        <img src="assets/img/Utilizador%204.jpg">
+      </ion-avatar>
+      <button ion-button color="primary" clear small icon-start>
+      </button>
+      <h5>Matemática</h5>
+      <button ion-button color="primary" clear small icon-start>
+      </button>
+      <button ion-button color="primary" clear small icon-start>
+      </button>
+      <button ion-button color="primary" clear small icon-start>
+      </button>
+
+
+
+      <ion-icon name='thumbs-up'></ion-icon>
+
+    </ion-item>
+
+
+
+    <ion-card-content>
+      <p>Luis Caldeira</p>
+    </ion-card-content>
+
+    <ion-row>
+      <ion-col>
+        <button ion-button color="primary" clear small icon-start>
+          <ion-icon name='text'></ion-icon>
+          10 Comentários
+        </button>
+      </ion-col>
+      <ion-col>
+        <button ion-button color="primary" clear small icon-start>
+
+        </button>
+      </ion-col>
+      <ion-col align-self-center text-center>
+        <ion-note>
+          3h atras
+        </ion-note>
+      </ion-col>
+    </ion-row>
+
+  </ion-card>
+  <ion-fab vertical="bottom" horizontal="end" slot="fixed">
+    <ion-fab-button color="dark" (click)="go()">
+      <ion-icon name="add"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+</ion-content>

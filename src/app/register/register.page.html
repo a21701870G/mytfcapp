@@ -1,0 +1,56 @@
+<ion-header>
+  <ion-toolbar color="dark">
+  <p align="center">
+    <ion-title>Registar</ion-title>
+
+  </p>
+  </ion-toolbar>
+</ion-header>
+<ion-content padding class="form-content">
+  <form class="form" [formGroup]="validationsForm" (ngSubmit)="tryRegister(validationsForm.value)">
+    <ion-item>
+      <ion-label position="floating" color="dark">Nome</ion-label>
+      <ion-input type="text" formControlName="email"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating" color="dark">Nome de Utilizador</ion-label>
+      <ion-input type="text" formControlName="email"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating" color="dark">Email</ion-label>
+      <ion-input type="text" formControlName="email"></ion-input>
+    </ion-item>
+    <div class="validation-errors">
+      <ng-container *ngFor="let validation of validationMessages.email">
+        <div class="error-message"
+             *ngIf="validationsForm.get('email').hasError(validation.type) &&
+            (validationsForm.get('dirty') || validationsForm.get('email').touched)">
+          {{ validation.message }}
+        </div>
+      </ng-container>
+    </div>
+    <ion-item>
+      <ion-label position="floating" color="dark">Palavra-Passe</ion-label>
+      <ion-input type="password" formControlName="password"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating" color="dark">Confirmar Palavra-Passe</ion-label>
+      <ion-input type="password" formControlName="password"></ion-input>
+    </ion-item>
+    <div class="validation-errors">
+      <ng-container *ngFor="let validation of validationMessages.password">
+        <div class="error-message"
+             *ngIf="validationsForm.get('password').hasError(validation.type) &&
+                (validationsForm.get('password') || validationsForm.get('password').touched)">
+          {{ validation.message }}
+        </div>
+      </ng-container>
+    </div>
+    <ion-button class="submit-btn" expand="block" color="dark"
+                type="submit" [disabled]="!validationsForm.valid">Registar
+    </ion-button>
+    <label class="error-message">{{errorMessage}}</label>
+    <label class="success-message">{{successMessage}}</label>
+  </form>
+  <p class="go-to-login"> Já esta registado?<a (click)="goLoginPage()">Tente iniciar sessão.</a></p>
+</ion-content>

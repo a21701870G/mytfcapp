@@ -1,0 +1,48 @@
+<ion-header>
+  <ion-toolbar color="dark">
+    <ion-button slot="start" color="dark" (click)="back()">
+      <ion-icon name="arrow-back" color="" size="large"></ion-icon>
+    </ion-button>
+    <p align="center">
+      <ion-title>
+        Change Password
+      </ion-title>
+    </p>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding class="form-content">
+  <ion-item>
+    <ion-label position="floating"
+               color="dark">Palavra-Passe Antiga</ion-label>
+    <ion-input type="password"></ion-input>
+  </ion-item>
+  <div class="validation-errors">
+
+  </div>
+
+
+  <ion-item>
+    <ion-label position="floating"
+               color="dark">Nova Palavra-Passe</ion-label>
+    <ion-input type="password"></ion-input>
+  </ion-item>
+  <div class="validation-errors">
+
+  </div>
+
+
+  <ion-item>
+    <ion-label position="floating"
+               color="dark">Confirmar Nova Palavra-Passe</ion-label>
+    <ion-input type="password"></ion-input>
+  </ion-item>
+  <div class="validation-errors">
+  </div>
+  <ion-button color="dark" class="submit-btn" expand="block"
+              type="submit"
+              >
+    Guardar
+  </ion-button>
+
+</ion-content>

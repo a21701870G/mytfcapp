@@ -1,0 +1,32 @@
+<ion-header>
+  <ion-toolbar color="dark">
+    <p align="center">
+      <ion-title>Upload de conteudo</ion-title>
+    </p>
+    <ion-button slot="start" color="dark" (click)="back()">
+      <ion-icon name="arrow-back" color="" size="large"></ion-icon>
+    </ion-button>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content>
+  <ion-item>
+    <ion-label position="floating" color="dark">Area de estudo</ion-label>
+    <ion-input type="text"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label position="floating" color="dark">Nome da Cadeira</ion-label>
+    <ion-input type="text"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label position="floating" color="dark">Nome da Matéria</ion-label>
+    <ion-input type="text"></ion-input>
+  </ion-item>
+  <ion-input type="file" (change)="loadImageFromDevice($event)" id="file-input"
+             accept="application/pdf"></ion-input>
+
+  <ion-button color="dark" class="submit-btn" expand="block" type="submit" (click)="back()">
+    Confirmar
+  </ion-button>
+</ion-content>
