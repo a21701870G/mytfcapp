@@ -16,7 +16,7 @@
       </ion-avatar>
       <button ion-button color="primary" clear small icon-start>
       </button>
-      <h5>SQL</h5>
+      <h5 (click)="goTopic()">SQL</h5>
       <button ion-button color="primary" clear small icon-start>
       </button>
       <button ion-button color="primary" clear small icon-start>
@@ -113,7 +113,7 @@
 
   </ion-card>
   <ion-fab vertical="bottom" horizontal="end" slot="fixed">
-    <ion-fab-button color="dark" (click)="go()">
+    <ion-fab-button color="dark" (click)="goNew()">
       <ion-icon name="add"></ion-icon>
     </ion-fab-button>
   </ion-fab>

@@ -31,7 +31,7 @@ export class ForumPage implements OnInit {
   public goTopic(): void {
     this.router.navigate(['/topic']);
   }
-  public go(): void {
-    this.router.navigate(['/topic']);
+  public goNew(): void {
+    this.router.navigate(['/new']);
   }
 }
